@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hydro pH</title>
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="capa" class="capa">
+  <form id="formCapa" class="capa-conteudo" action="#" autocomplete="off">
+    <img class="logo logo-capa" src="images/logo.png" alt="Logo do Hydro pH">
+    <p class="sub">Projeto de monitoramento da qualidade da água</p>
+    <h1>Hydro <span class="ph">pH</span></h1>
+    <p class="lead">Descubra o que o pH diz sobre a água e conheça o projeto que mede isso de perto.</p>
+    <label for="nome">Como podemos te chamar?</label>
+    <input id="nome" type="text" enterkeyhint="go" placeholder="Seu nome" autocomplete="given-name">
+    <div class="botoes">
+      <button id="entrar" type="submit" class="primario">Entrar</button>
+      <button id="saiba" type="button" class="secundario">Saiba mais</button>
+      <a class="botao" href="https://www.tinkercad.com/things/jPDdLmO9wPH-sensor-ph-2026?sharecode=NnGFC0G1h2Ws514LACWy8viU8i7m8ehutpxyZqYWMg8" target="_blank" rel="noopener noreferrer">Protótipo</a>
+    </div>
+    <noscript><p class="lead">Este site precisa de JavaScript. Abra o arquivo no Chrome ou Safari.</p></noscript>
+  </form>
+  <div class="onda" aria-hidden="true"></div>
+</section>
+
+<main id="site" class="oculto">
+  <nav>
+    <span class="marca"><img class="logo logo-nav" src="images/logo.png" alt=""><strong>Hydro pH</strong></span>
+    <a href="#oque">O que é pH</a>
+    <a href="#teste">Teste um valor</a>
+    <a href="#projeto">O projeto</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <h2 id="ola"></h2>
+
+  <section id="oque">
+    <h2>O que é o pH da água</h2>
+    <p>O pH mede quanto uma água é ácida ou alcalina, numa escala de 0 a 14. Abaixo de 7 é ácida, 7 é neutra e acima de 7 é alcalina.</p>
+    <p>No Brasil, a Portaria GM/MS nº 888/2021 recomenda que a água distribuída para consumo fique entre 6,0 e 9,0.</p>
+    <div class="barra" role="img" aria-label="Escala de pH de 0 a 14"></div>
+    <div class="marcas"><span>0 ácida</span><span>7 neutra</span><span>14 alcalina</span></div>
+    <p>O pH influencia a corrosão de tubulações, a eficácia do cloro, o sabor da água e a vida de peixes e plantas.</p>
+  </section>
+
+  <section id="teste">
+    <h2>Teste um valor de pH</h2>
+    <p>Digite o pH que você mediu e veja em que faixa ele está.</p>
+    <div class="linha">
+      <label for="valor">pH medido</label>
+      <input id="valor" type="text" inputmode="decimal" placeholder="Ex.: 7,2">
+      <button id="verificar" class="primario">Verificar</button>
+    </div>
+    <div id="resultado" class="resultado" role="status"></div>
+  </section>
+
+  <section id="projeto">
+    <h2>O projeto Hydro pH</h2>
+    <p>Hydro pH é um projeto para medir e acompanhar o pH da água de forma simples e acessível.</p>
+    <dl>
+      <dt>Objetivo</dt><dd>Monitorar o pH da água e avisar quando ele sair da faixa segura.</dd>
+      <dt>Como funciona</dt><dd>Um sensor lê o pH, os dados são registrados e exibidos neste site.</dd>
+      <dt>Quem se beneficia</dt><dd>Famílias, escolas, hortas e criadores que dependem de água de boa qualidade.</dd>
+    </dl>
+  </section>
+
+  <section id="contato">
+    <h2>Fale com a equipe</h2>
+    <div class="form">
+      <label for="c-nome">Nome</label><input id="c-nome" type="text">
+      <label for="c-email">E-mail</label><input id="c-email" type="email">
+      <label for="c-msg">Mensagem</label><textarea id="c-msg" rows="4"></textarea>
+      <button id="enviar" class="primario">Enviar mensagem</button>
+      <p id="c-ok" class="resultado"></p>
+    </div>
+  </section>
+  <footer>Hydro pH · Projeto escolar</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

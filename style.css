@@ -1,0 +1,55 @@
+:root{--fundo:#f3f8f7;--texto:#0e2a33;--suave:#4a6670;--mar:#0b3b4a;--agua:#1f8a9e;--claro:#bfe6e8;--ok:#1b7f4b;--alerta:#b3261e;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--fundo:#0a1a20;--texto:#e6f2f3;--suave:#9db8bd;--mar:#06242d;--agua:#4fc3d4;--claro:#14404a;--ok:#58d08e;--alerta:#ff8a80;color-scheme:dark}}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--fundo);color:var(--texto);font:17px/1.65 Georgia,"Times New Roman",serif}
+h1,h2,nav,label,button,.sub{font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif}
+.oculto{display:none}
+
+.capa{min-height:100vh;display:grid;place-items:center;padding:2rem;position:relative;overflow:hidden;background:linear-gradient(180deg,#f7fcfc 0%,#e2f3f4 60%,#c4e8ea 100%);color:#0b3b4a}
+.capa-conteudo{max-width:520px;width:100%;position:relative;z-index:1;text-align:center}
+.sub{margin:0 0 .4rem;color:#1f7f92;font-size:.95rem;letter-spacing:.04em}
+.capa h1{font-size:clamp(3.2rem,12vw,5.5rem);line-height:1;margin:0 0 1rem;font-weight:700;letter-spacing:-.02em;color:#0b3b4a}
+.ph{font-style:italic;font-family:Georgia,serif;color:#1f8a9e}
+.lead{font-size:1.15rem;margin:0 auto 2rem;max-width:44ch;color:#31535d}
+.capa label{display:block;font-size:.95rem;margin-bottom:.4rem;color:#31535d}
+.capa input{width:100%;padding:.8rem 1rem;border:2px solid #9fd3d8;border-radius:10px;background:#fff;color:#0b3b4a;font-size:1rem;text-align:center}
+.capa input::placeholder{color:#7a9aa1}
+.botoes{display:flex;gap:.8rem;margin-top:1.2rem;flex-wrap:wrap;justify-content:center}
+.onda{position:absolute;left:-10%;right:-10%;bottom:-70px;height:150px;background:#1f8a9e;border-radius:50% 50% 0 0/100% 100% 0 0;opacity:.18}
+
+button{cursor:pointer;border:0;border-radius:10px;padding:.8rem 1.6rem;font-size:1rem;font-weight:600;transition:transform .12s}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+button:active{transform:scale(.97)}
+.primario{background:#0b3b4a;color:#fff}
+.secundario{background:transparent;color:#0b3b4a;border:2px solid #0b3b4a55}
+main .primario{background:var(--mar);color:#fff}
+:focus-visible{outline:3px solid #ffb703;outline-offset:2px}
+
+nav{position:sticky;top:env(safe-area-inset-top,0px);display:flex;gap:1.4rem;align-items:center;flex-wrap:wrap;padding:.7rem 1.5rem;background:#fff;color:#0b3b4a;z-index:5;border-bottom:1px solid #bfe6e8}
+nav strong{margin-right:auto;font-size:1.1rem}
+nav a{color:#31535d;text-decoration:none;font-size:.95rem}
+nav a:hover{color:#1f8a9e;text-decoration:underline}
+#ola{max-width:720px;margin:2rem auto 0;padding:0 1.5rem;color:var(--agua)}
+main section{max-width:720px;margin:0 auto;padding:2.5rem 1.5rem;scroll-margin-top:60px}
+main h2{font-size:1.8rem;margin:0 0 .8rem}
+main input,main textarea{width:100%;padding:.7rem .9rem;border:2px solid var(--claro);border-radius:8px;background:transparent;color:var(--texto);font:inherit}
+main label{display:block;font-size:.95rem;margin:.9rem 0 .3rem;color:var(--suave)}
+
+.barra{height:22px;border-radius:11px;margin-top:1.5rem;background:linear-gradient(90deg,#d62828,#f77f00,#fcbf49,#8fce5a,#2a9d8f,#277da1,#5a3e9e)}
+.marcas{display:flex;justify-content:space-between;font:.85rem "Trebuchet MS",sans-serif;color:var(--suave);margin:.4rem 0 1.5rem}
+.linha{display:grid;grid-template-columns:1fr auto;gap:.2rem .8rem;align-items:end}
+.linha label{grid-column:1/-1;margin-top:0}
+.resultado{margin-top:1rem;font-weight:600;min-height:1.5em}
+.bom{color:var(--ok)} .ruim{color:var(--alerta)}
+dt{font:700 1rem "Trebuchet MS",sans-serif;color:var(--agua);margin-top:1rem} dd{margin:.2rem 0 0}
+.form button{margin-top:1.2rem}
+footer{text-align:center;padding:2rem;color:var(--suave);font:.9rem "Trebuchet MS",sans-serif}
+.logo{display:block;object-fit:contain}
+.logo-capa{width:150px;height:150px;margin:0 auto .6rem}
+.logo-nav{width:40px;height:40px}
+a.botao{display:inline-block;text-decoration:none;border-radius:10px;padding:.8rem 1.6rem;font:600 1rem "Trebuchet MS","Segoe UI",system-ui,sans-serif;background:transparent;color:#0b3b4a;border:2px solid #0b3b4a55;touch-action:manipulation}
+a.botao:active{transform:scale(.97)}
+nav .marca{display:flex;align-items:center;gap:.7rem;margin-right:auto;font-size:1.1rem}
